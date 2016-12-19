@@ -5,5 +5,5 @@ local_settings.py
 *~
 .idea/
 __pycache__
-venv/ 
+venv 
 db.sqlite3
