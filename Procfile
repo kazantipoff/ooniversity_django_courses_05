@@ -1,1 +1,1 @@
-web: gunicorn mysite.wsgi
+web: gunicorn pybursa05.wsgi

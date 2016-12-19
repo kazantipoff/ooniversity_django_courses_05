@@ -4,10 +4,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = '9&s+6b*gomdg#0v0l$*an23h#)uo11$iyc=03v1%=*6m+ldpa='
 
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'django.contrib.admin',
@@ -15,11 +11,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'pybursa',
     'django.contrib.staticfiles',
     'quadratic.apps.QuadraticConfig',
     'courses.apps.CoursesConfig',
     'students.apps.StudentsConfig',
+    'pybursa',
     'coaches.apps.CoachesConfig',
     'feedbacks.apps.FeedbacksConfig',
     'debug_toolbar',
@@ -154,7 +150,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['*']
 
-DEBUG = False
+DEBUG = True
 
 try:
     from .local_settings import *
